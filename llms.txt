@@ -1,0 +1,25 @@
+# William Valera · Head of IT & Business Systems
+
+> Hands-on IT Manager based in Valencia, Spain, with 20+ years in technology and systems. Technical lead for the ERP (Microsoft Dynamics NAV), data, applications, AI, EU regulatory compliance, security and infrastructure of a distribution company. He analyses the need, decides the solution and leads its implementation with AI agents, reviewing and approving every change that reaches production.
+
+## Profile
+- Current role (2024–present): Business Systems, Automation & AI Lead, Arte Regal Import, S.L. (Valencia).
+- 2018–2024: IT Consultant, ERP implementation (Microsoft Dynamics NAV), same company.
+- 2005–2018: systems, support, networking and technical management roles in Venezuela.
+- Education: Systems Analyst. Languages: Spanish (native), English (intermediate).
+
+## Capabilities
+- ERP: Microsoft Dynamics NAV, C/AL, NAS and Job Queue, SOAP, EDI.
+- Data engineering: central data platform, incremental ETL from SQL Server to MySQL/MariaDB, validation and atomic publishing.
+- Applied AI: tool-using agents, context-aware translation, multimodal image validation, voice transcription.
+- AI-driven development: a team of 9 specialised AI agents with human approval.
+- Full-stack and offline applications: FastAPI, Next.js, React, TypeScript, PWA.
+- Business automation, security, infrastructure and operations.
+- EU regulatory compliance: EUDR, CBAM and PPWR supplier tracking; CLP/GHS product-safety labelling.
+- Code base: 20 private Git repositories (as of November 2026) across five domains: commerce and web, purchasing and retail, data and ERP, IT/operations/management, AI and method. Listed on the website under generic names.
+
+## Links
+- Website: https://williamvalera.dev
+- Interactive 3D version: https://williamvalera.dev/blackbox/
+- LinkedIn: https://www.linkedin.com/in/william-valera/
+- Email: valeraw@gmail.com

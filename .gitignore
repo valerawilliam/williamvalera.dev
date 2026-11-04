@@ -1,0 +1,55 @@
+# Lista blanca: se versiona SOLO lo que se publica (tools/deploy-files.txt),
+# más las herramientas, el README y la licencia. Todo lo demás (versiones
+# antiguas, copias, informes, documentación privada) queda fuera.
+*
+!.gitignore
+!README.md
+!LICENSE
+!.htaccess
+!404.html
+!index.html
+!robots.txt
+!sitemap.xml
+!llms.txt
+!favicon.svg
+!favicon-16.png
+!favicon-32.png
+!apple-touch-icon.png
+!icon-512.png
+!.well-known/
+!.well-known/security.txt
+!css/
+!css/site.css
+!css/404.css
+!js/
+!js/site.js
+!js/404.js
+!blackbox/
+!blackbox/index.html
+!blackbox/bb.css
+!blackbox/bb.js
+!blackbox/bb-content.js
+!blackbox/bb-data.js
+!blackbox/favicon.svg
+!img/
+!img/**
+!cv/
+!cv/William-Valera-CV-ES.pdf
+!cv/William-Valera-CV-EN.pdf
+!tools/
+!tools/deploy.sh
+!tools/deploy-files.txt
+!tools/build_cv.mjs
+!tools/sync_system_os.py
+!tools/github_map.py
+
+# Privado, nunca se sube aunque esté dentro de tools/
+tools/deploy.env
+tools/github-map.private.json
+.DS_Store
+
+# Logos sin uso, no desplegados
+img/logos/aws.svg
+img/logos/caddy.svg
+img/logos/cloudflare.svg
+img/logos/hetzner.svg

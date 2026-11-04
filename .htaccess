@@ -1,0 +1,46 @@
+# williamvalera.dev · web estática
+Options -Indexes
+DirectoryIndex index.html
+
+# Un solo dominio: www → raíz, siempre por HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.williamvalera\.dev$ [NC]
+  RewriteRule ^ https://williamvalera.dev%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://williamvalera.dev%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# Cabeceras de seguridad. La CSP también va en <meta> en cada página.
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://static.cloudflareinsights.com; style-src 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://cdn.jsdelivr.net https://cdn.simpleicons.org; connect-src 'self' https://api.emailjs.com https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+</IfModule>
+
+# Ficheros ocultos, de trabajo o de copia: nunca se sirven
+<FilesMatch "(^\.|\.(md|py|sh|bak|log|ini|env|json\.bak)$|^index\.v[0-9].*\.html$|\.v[0-9]+\.(css|js)$|^_headers$)">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^llms\.txt$">
+  Require all granted
+</FilesMatch>
+
+# Las páginas siempre se validan contra el servidor: cada despliegue se ve al momento.
+# Imágenes, estilos y scripts se pueden guardar en caché.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|txt)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|svg|png|jpg|webp|woff2)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+# Página de error propia
+ErrorDocument 404 /404.html

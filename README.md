@@ -11,7 +11,7 @@ Código de mi web profesional: [williamvalera.dev](https://williamvalera.dev). W
 | `index.html`, `css/site.css`, `js/site.js` | La web. Todo el texto va en los dos idiomas (`.l-es` / `.l-en`); el idioma se cambia sin recargar. |
 | `blackbox/` | «System OS», la versión 3D (Three.js). `bb-data.js` se **genera** desde `index.html`, no se edita. |
 | `cv/` | CV ATS de dos páginas, ES y EN, generado desde la web. |
-| `tools/` | Scripts: sincronizar la versión 3D, generar el CV, el mapa de repositorios y el despliegue. |
+| `tools/` | Scripts: sincronizar la versión 3D, generar el CV y el despliegue. |
 | `.htaccess` | Cabeceras de seguridad: CSP estricta sin `unsafe-inline` en scripts, HSTS, nosniff, X-Frame-Options, Referrer-Policy, Permissions-Policy, COOP. |
 | `llms.txt`, `robots.txt`, `sitemap.xml`, `.well-known/security.txt` | Metadatos para buscadores, asistentes y reporte de seguridad. |
 
@@ -20,9 +20,8 @@ Código de mi web profesional: [williamvalera.dev](https://williamvalera.dev). W
 1. Editar `index.html` (ES y EN a la vez).
 2. Si cambian capacidades, proyectos o experiencia: `python3 tools/sync_system_os.py` regenera la versión 3D.
 3. Si afecta al CV: `node tools/build_cv.mjs` (necesita `puppeteer-core` y Chrome). Debe seguir siendo de dos páginas.
-4. `python3 tools/github_map.py` refresca el bloque «Mapa de repositorios» leyendo GitHub con `gh`. La tabla que traduce cada repositorio a un nombre público vive en un fichero privado que no está en este repo; los repositorios de trabajo son privados y aquí solo aparecen su dominio, propósito y tecnología.
-5. Probar en local: `python3 -m http.server 8080 --bind 127.0.0.1` y abrir `http://127.0.0.1:8080/index.html?nointro` (`&lang=en` para inglés). Revisar a 1440, 1280, 1024, 390 y 320 px.
-6. Publicar: `bash tools/deploy.sh --dry` muestra qué subiría; `bash tools/deploy.sh` renueva el `?v=` de los assets (la CDN cachea CSS y JS), sube **solo** lo listado en `tools/deploy-files.txt` y comprueba la web en vivo. La conexión se lee de `tools/deploy.env`, que no se versiona.
+4. Probar en local: `python3 -m http.server 8080 --bind 127.0.0.1` y abrir `http://127.0.0.1:8080/index.html?nointro` (`&lang=en` para inglés). Revisar a 1440, 1280, 1024, 390 y 320 px.
+5. Publicar: `bash tools/deploy.sh --dry` muestra qué subiría; `bash tools/deploy.sh` renueva el `?v=` de los assets (la CDN cachea CSS y JS), sube **solo** lo listado en `tools/deploy-files.txt` y comprueba la web en vivo. La conexión se lee de `tools/deploy.env`, que no se versiona.
 
 ## Decisiones
 

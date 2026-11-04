@@ -16,7 +16,6 @@
 - Full-stack and offline applications: FastAPI, Next.js, React, TypeScript, PWA.
 - Business automation, security, infrastructure and operations.
 - EU regulatory compliance: EUDR, CBAM and PPWR supplier tracking; CLP/GHS product-safety labelling.
-- Code base: 20 private Git repositories (as of November 2026) across five domains: commerce and web, purchasing and retail, data and ERP, IT/operations/management, AI and method. Listed on the website under generic names.
 
 ## Links
 - Website: https://williamvalera.dev

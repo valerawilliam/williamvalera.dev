@@ -590,16 +590,6 @@
       if (more) { if (f !== 'all') more.open = true; }
       cards.forEach(c => { const show = f === 'all' || c.dataset.area === f; c.hidden = !show; if (show) { c.classList.remove('pf-in'); void c.offsetWidth; c.classList.add('pf-in'); } });
     }));
-    // Mapa de repositorios (tools/github_map.py): «→ NN» lleva al caso, aunque esté filtrado o dentro de «ver más»
-    casos.querySelectorAll('.ghmap-go').forEach(a => a.addEventListener('click', e => {
-      const card = document.getElementById(a.getAttribute('href').slice(1)); if (!card) return;
-      e.preventDefault();
-      const all = casos.querySelector('.pf[data-f="all"]'); if (all && !all.classList.contains('on')) all.click();
-      if (more && more.contains(card)) more.open = true;
-      card.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
-      card.classList.remove('pf-in'); void card.offsetWidth; card.classList.add('pf-in');
-      history.replaceState(null, '', '#' + card.id);
-    }));
     // Relieve: la tarjeta se inclina levemente hacia el cursor
     if (!reduced && matchMedia('(hover: hover) and (pointer: fine)').matches) cards.forEach(c => {
       c.addEventListener('pointermove', e => { const r = c.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;

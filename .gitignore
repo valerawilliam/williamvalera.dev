@@ -41,11 +41,9 @@
 !tools/deploy-files.txt
 !tools/build_cv.mjs
 !tools/sync_system_os.py
-!tools/github_map.py
 
 # Privado, nunca se sube aunque esté dentro de tools/
 tools/deploy.env
-tools/github-map.private.json
 .DS_Store
 
 # Logos sin uso, no desplegados

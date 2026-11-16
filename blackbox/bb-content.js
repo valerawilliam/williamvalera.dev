@@ -624,6 +624,26 @@ window.BB = {
      "Status dashboard",
      "Email and mobile alerts"
     ]
+   },
+   "case": {
+    "es": {
+     "context": "Servidores locales y en la nube, almacenamiento, bases de datos y tareas programadas se revisaban por separado.",
+     "problem": "Hacía falta ver en un solo sitio qué funciona y qué no, y saber si cada dato es reciente.",
+     "arch": "Recolectores de solo lectura lanzados cada hora → ficheros de estado e histórico → API con sesión y segundo factor → panel web instalable en el móvil.",
+     "solution": "Un panel con semáforo por fuente, histórico y gráficas de cada pasada, aviso de dato caducado y alertas por correo y móvil.",
+     "resp": "Análisis, decisiones de diseño y de seguridad, desarrollo dirigido con IA, pruebas en los servidores y operación.",
+     "results": "Las incidencias se detectan antes de que lleguen al usuario. La recogida completa del estado pasó de unos 20 minutos a menos de un minuto.",
+     "decisions": "Recolectores de solo lectura con usuarios sin privilegios; aviso cuando un dato está caducado; segundo factor exigido por la API y registro de accesos."
+    },
+    "en": {
+     "context": "On-premise and cloud servers, storage, databases and scheduled tasks were checked separately.",
+     "problem": "A single place was needed to see what works and what does not, and to know whether each reading is recent.",
+     "arch": "Read-only collectors launched every hour → status and history files → API with session and second factor → web dashboard installable on mobile.",
+     "solution": "A dashboard with a status light per source, history and charts for each run, stale-data warnings and email and mobile alerts.",
+     "resp": "Analysis, design and security decisions, AI-driven development, testing on the servers and operations.",
+     "results": "Incidents are detected before they reach users. Full status collection went from about 20 minutes to under a minute.",
+     "decisions": "Read-only collectors with unprivileged users; a warning when data is stale; second factor enforced by the API, and an access log."
+    }
    }
   },
   "17": {
@@ -641,6 +661,80 @@ window.BB = {
      "Server",
      "Management dashboard"
     ]
+   }
+  },
+  "18": {
+   "mod": "ai",
+   "flow": {
+    "es": [
+     "Aplicación instalable (PWA)",
+     "Cola de trabajos",
+     "Transcripción y hablantes en local",
+     "Modelo de lenguaje local · encargo verificado"
+    ],
+    "en": [
+     "Installable app (PWA)",
+     "Job queue",
+     "Local transcription and speakers",
+     "Local language model · verified brief"
+    ]
+   },
+   "case": {
+    "es": {
+     "context": "Las peticiones de desarrollo llegan de palabra: en reuniones o cuando un usuario explica lo que necesita.",
+     "problem": "Convertir esa conversación en una especificación llevaba tiempo, y el audio no debía salir del equipo.",
+     "arch": "Aplicación instalable para grabar o subir audio → cola de trabajos → transcripción y separación de hablantes en local → modelo de lenguaje local que redacta y verifica el encargo → nota en texto.",
+     "solution": "Cada nota de voz o reunión queda como un documento con la transcripción literal y un encargo estructurado: objetivo, cambios pedidos, criterios de aceptación y dudas abiertas. En las reuniones, resumen con decisiones y tareas por persona.",
+     "resp": "Análisis, arquitectura, desarrollo dirigido con IA, seguridad de acceso y operación.",
+     "results": "En uso en reuniones de desarrollo y en la toma de requisitos con usuarios. El encargo se genera en 8-11 s por nota, verificación incluida.",
+     "decisions": "Modelos en local en lugar de servicios externos; una segunda pasada comprueba cada afirmación contra la transcripción; acceso solo por red privada, con passkeys."
+    },
+    "en": {
+     "context": "Development requests arrive by word of mouth: in meetings or when a user explains what they need.",
+     "problem": "Turning that conversation into a specification took time, and the audio had to stay on the machine.",
+     "arch": "Installable app to record or upload audio → job queue → local transcription and speaker separation → local language model that drafts and verifies the brief → text note.",
+     "solution": "Each voice note or meeting becomes a document with the verbatim transcript and a structured brief: goal, requested changes, acceptance criteria and open questions. For meetings, a summary with decisions and tasks per person.",
+     "resp": "Analysis, architecture, AI-driven development, access security and operations.",
+     "results": "In use in development meetings and in requirements gathering with users. The brief is generated in 8-11 s per note, verification included.",
+     "decisions": "Local models instead of external services; a second pass checks every statement against the transcript; access over a private network only, with passkeys."
+    }
+   }
+  },
+  "19": {
+   "mod": "apps",
+   "flow": {
+    "es": [
+     "Contenido en ficheros de texto",
+     "Generador estático",
+     "Formularios propios en servidor",
+     "Corte por bloques con vuelta atrás"
+    ],
+    "en": [
+     "Content in text files",
+     "Static site generator",
+     "In-house server-side forms",
+     "Block-by-block cutover with rollback"
+    ]
+   },
+   "case": {
+    "es": {
+     "context": "La web corporativa, en 5 idiomas, funcionaba sobre WordPress con un maquetador visual y más de veinte plugins.",
+     "problem": "Había que sustituirla por una web más sencilla de mantener y de proteger, conservando las URL, el SEO y los formularios.",
+     "arch": "Contenido en ficheros de texto → generador estático → web de solo lectura; formularios propios en el servidor con validación, protección contra spam y cola de reintentos.",
+     "solution": "Web estática en 5 idiomas con las mismas URL, 87 redirecciones, banner de cookies propio, vídeo de portada optimizado (de 7,4 a 1,6 MB) y formularios con confirmación al cliente en todos los idiomas.",
+     "resp": "Análisis de la web existente, decisiones del plan (tecnología, alojamiento, formularios y retirada), revisión y aprobación de cada bloque del corte, y pruebas reales de correo, antispam e inicio de sesión.",
+     "results": "A+ en Mozilla Observatory, sin plugins ni gestor de contenidos y corte sin interrupción del servicio. Tres días del primer commit al corte.",
+     "decisions": "Generador estático en lugar de un CMS; raíz nueva en el mismo servidor, con la web anterior intacta y vuelta atrás en menos de dos minutos; formularios en el propio servidor en lugar de un servicio externo."
+    },
+    "en": {
+     "context": "The corporate website, in 5 languages, ran on WordPress with a visual page builder and more than twenty plugins.",
+     "problem": "It had to be replaced with a site that is simpler to maintain and to secure, while keeping URLs, SEO and forms.",
+     "arch": "Content in text files → static site generator → read-only website; in-house server-side forms with validation, spam protection and a retry queue.",
+     "solution": "Static website in 5 languages with the same URLs, 87 redirects, an in-house cookie banner, an optimised hero video (from 7.4 to 1.6 MB) and forms with customer confirmation in every language.",
+     "resp": "Analysis of the existing site, the plan's decisions (technology, hosting, forms and decommissioning), review and approval of each cutover block, and live tests of email, anti-spam and sign-in.",
+     "results": "A+ on Mozilla Observatory, no plugins or CMS, and a cutover with no service interruption. Three days from first commit to cutover.",
+     "decisions": "Static generator instead of a CMS; a new root on the same server, with the previous site intact and rollback in under two minutes; forms on our own server instead of an external service."
+    }
    }
   }
  },

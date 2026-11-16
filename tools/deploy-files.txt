@@ -26,6 +26,7 @@ img/agentes/tech-writer.png
 img/logos/c-agents.svg
 img/logos/c-backups.svg
 img/logos/c-edi.svg
+img/logos/c-edr.svg
 img/logos/c-etl.svg
 img/logos/c-eu.svg
 img/logos/c-firewall.svg
@@ -33,9 +34,11 @@ img/logos/c-ghs.svg
 img/logos/c-gitleaks.svg
 img/logos/c-hitl.svg
 img/logos/c-samba.svg
+img/logos/c-rest.svg
 img/logos/c-soap.svg
 img/logos/c-totp.svg
 img/logos/c-vlan.svg
+img/logos/c-vpn.svg
 img/logos/docker.svg
 img/logos/fastapi.svg
 img/logos/github.svg

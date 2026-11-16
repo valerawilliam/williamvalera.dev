@@ -69,25 +69,25 @@
     'Claude': SI + 'claude', 'Anthropic': SI + 'anthropic', 'OpenAI': SI9 + 'openai.svg', 'DeepL': SI + 'deepl',
     'AWS': DEV + 'amazonwebservices/amazonwebservices-original-wordmark.svg', 'Hetzner': SI + 'hetzner',
     'Cloudflare': SI + 'cloudflare', 'Docker': DEV + 'docker/docker-original.svg', 'nginx': DEV + 'nginx/nginx-original.svg',
-    'Caddy': SI + 'caddy', 'VMware': SI + 'vmware', 'Debian': DEV + 'debian/debian-original.svg',
+    'Caddy': SI + 'caddy', 'VMware': SI + 'vmware', 'Debian': DEV + 'debian/debian-original.svg', 'Ubuntu': DEV + 'ubuntu/ubuntu-original.svg',
     'Windows Server': DEV + 'windows11/windows11-original.svg', 'Wasabi': SI + 'wasabi', "Let's Encrypt": SI + 'letsencrypt',
     'pandas': DEV + 'pandas/pandas-original.svg', 'Bash': DEV + 'bash/bash-original.svg', 'PyTorch': DEV + 'pytorch/pytorch-original.svg',
     'Linux': DEV + 'linux/linux-original.svg', 'pytest': DEV + 'pytest/pytest-original.svg', 'Playwright': DEV + 'playwright/playwright-original.svg',
     // Tecnologías sin logo propio: se muestran con el de su plataforma
     'C/AL': SI9 + 'dynamics365.svg', 'NAS / Job Queue': SI9 + 'dynamics365.svg', 'RDLC': SI9 + 'dynamics365.svg',
-    'T-SQL': DEV + 'microsoftsqlserver/microsoftsqlserver-original.svg', 'Whisper': SI9 + 'openai.svg', 'CLIP': SI9 + 'openai.svg',
-    'Flask': DEV + 'flask/flask-original.svg', 'Code review': SI + 'github', 'rclone': SI + 'rclone', 'Samba': 'img/logos/c-samba.svg', 'Firewall UTM': 'img/logos/c-firewall.svg', 'VLAN': 'img/logos/c-vlan.svg',
-    'SOAP': 'img/logos/c-soap.svg', 'EUDR · CBAM · PPWR': 'img/logos/c-eu.svg', 'CLP / GHS': 'img/logos/c-ghs.svg', 'EDI': 'img/logos/c-edi.svg', 'ETL': 'img/logos/c-etl.svg', 'LLM Agents': 'img/logos/c-agents.svg',
-    'HITL': 'img/logos/c-hitl.svg', 'gitleaks': 'img/logos/c-gitleaks.svg', 'TOTP / 2FA': 'img/logos/c-totp.svg', 'Backups': 'img/logos/c-backups.svg',
+    'T-SQL': DEV + 'microsoftsqlserver/microsoftsqlserver-original.svg', 'Hyper-V': DEV + 'windows11/windows11-original.svg', 'Whisper': SI9 + 'openai.svg', 'CLIP': SI9 + 'openai.svg',
+    'Flask': DEV + 'flask/flask-original.svg', 'Code review': SI + 'github', 'rclone': SI + 'rclone', 'Samba': 'img/logos/c-samba.svg', 'Firewall UTM': 'img/logos/c-firewall.svg', 'VLAN': 'img/logos/c-vlan.svg', 'VPN': 'img/logos/c-vpn.svg',
+    'SOAP': 'img/logos/c-soap.svg', 'API REST': 'img/logos/c-rest.svg', 'Hugo': SI + 'hugo', 'PyQt5': SI + 'qt', 'Ollama': SI + 'ollama', 'Claude Code': SI + 'claude', 'Apache': SI + 'apache', 'EUDR · CBAM · PPWR': 'img/logos/c-eu.svg', 'CLP / GHS': 'img/logos/c-ghs.svg', 'EDI': 'img/logos/c-edi.svg', 'ETL': 'img/logos/c-etl.svg', 'LLM Agents': 'img/logos/c-agents.svg',
+    'HITL': 'img/logos/c-hitl.svg', 'gitleaks': 'img/logos/c-gitleaks.svg', 'TOTP / 2FA': 'img/logos/c-totp.svg', 'Antivirus / EDR': 'img/logos/c-edr.svg', 'Backups': 'img/logos/c-backups.svg',
     'Git': DEV + 'git/git-original.svg', 'GitHub': SI + 'github', 'GitHub Actions': DEV + 'githubactions/githubactions-original.svg'
   };
   const STACK = [
     ['Dynamics NAV', 'C/AL', 'NAS / Job Queue', 'SOAP', 'RDLC', 'EDI', 'EUDR · CBAM · PPWR', 'CLP / GHS'],
     ['SQL Server', 'T-SQL', 'MySQL', 'MariaDB', 'SQLite', 'SQLAlchemy', 'pandas', 'ETL'],
-    ['Python', 'FastAPI', 'Flask', 'TypeScript', 'React', 'Next.js', 'Vite', 'Tailwind', 'PWA', 'three.js', 'PHP', 'PrestaShop', 'PowerShell', 'Bash'],
-    ['Claude', 'Anthropic', 'OpenAI', 'DeepL', 'Whisper', 'PyTorch', 'CLIP', 'LLM Agents', 'HITL'],
-    ['AWS', 'Docker', 'nginx', 'Caddy', 'VMware', 'Firewall UTM', 'VLAN', 'Debian', 'Linux', 'Samba', 'Windows Server', 'rclone', 'Wasabi', "Let's Encrypt"],
-    ['Git', 'GitHub', 'GitHub Actions', 'pytest', 'Playwright', 'Code review', 'gitleaks', 'TOTP / 2FA', 'Backups']
+    ['Python', 'FastAPI', 'Flask', 'TypeScript', 'React', 'Next.js', 'Vite', 'Tailwind', 'PWA', 'three.js', 'API REST', 'PyQt5', 'PHP', 'PrestaShop', 'Hugo', 'PowerShell', 'Bash'],
+    ['Claude', 'Claude Code', 'Anthropic', 'OpenAI', 'DeepL', 'Whisper', 'Ollama', 'PyTorch', 'CLIP', 'LLM Agents', 'HITL'],
+    ['AWS', 'Cloudflare', 'Docker', 'nginx', 'Apache', 'Caddy', 'VMware', 'Hyper-V', 'Firewall UTM', 'VLAN', 'VPN', 'Debian', 'Ubuntu', 'Linux', 'Samba', 'Windows Server', 'rclone', 'Wasabi', "Let's Encrypt"],
+    ['Git', 'GitHub', 'GitHub Actions', 'pytest', 'Playwright', 'Code review', 'gitleaks', 'TOTP / 2FA', 'Antivirus / EDR', 'Backups']
   ];
   const logo = name => {
     if (!LOGOS[name]) return null;
@@ -596,6 +596,62 @@
         c.style.setProperty('--rx', (-y * 5).toFixed(2) + 'deg'); c.style.setProperty('--ry', (x * 6).toFixed(2) + 'deg'); c.style.setProperty('--gx', ((x + .5) * 100).toFixed(1) + '%'); c.style.setProperty('--gy', ((y + .5) * 100).toFixed(1) + '%'); c.classList.add('tilt'); });
       c.addEventListener('pointerleave', () => { c.style.setProperty('--rx', '0deg'); c.style.setProperty('--ry', '0deg'); c.classList.remove('tilt'); });
     });
+  }
+
+  /* ---------- § 03 · Ficha del proyecto: al abrir una tarjeta se muestra el caso completo ----------
+     El contenido es el mismo de System OS (blackbox/bb-content.js), que se carga solo cuando hace falta.
+     Los proyectos sin estudio detallado muestran lo que ya dice su tarjeta. */
+  const prjDlg = document.getElementById('prjdlg');
+  if (casos && prjDlg) {
+    const cards = [...casos.querySelectorAll('.pc')];
+    const body = document.getElementById('prjdlg-body'), kick = document.getElementById('prjdlg-k');
+    const ver = ((document.querySelector('script[src*="js/site.js"]') || {}).src || '').split('?v=')[1] || '';
+    let loading = null, cur = -1;
+    const load = () => loading || (loading = new Promise(res => {
+      if (window.BB) return res(window.BB.projectExtra || {});
+      const sc = document.createElement('script'); sc.src = 'blackbox/bb-content.js' + (ver ? '?v=' + ver : '');
+      sc.onload = () => res((window.BB && window.BB.projectExtra) || {}); sc.onerror = () => res({});
+      document.head.append(sc);
+    }));
+    const bi = (es, en) => `<span class="l-es">${esc(es)}</span><span class="l-en">${esc(en)}</span>`;
+    const LABELS = [['context', 'Contexto', 'Context'], ['problem', 'Problema', 'Problem'], ['solution', 'Solución', 'Solution'], ['arch', 'Arquitectura', 'Architecture'],
+      ['resp', 'Mi responsabilidad', 'My responsibility'], ['decisions', 'Decisiones técnicas', 'Technical decisions'], ['results', 'Resultados', 'Results']];
+    const cell = (k, html) => `<div><h4 class="mono">${k}</h4><p>${html}</p></div>`;
+    const shown = () => cards.filter(c => !c.hidden);
+    async function open(card) {
+      const extra = await load(), x = extra[parseInt(card.id.slice(4), 10) - 1] || {};
+      const get = sel => { const el = card.querySelector(sel); return el ? el.innerHTML : ''; };
+      cur = cards.indexOf(card);
+      kick.innerHTML = get('.pc-tag');
+      let grid;
+      if (x.case) grid = LABELS.map(([k, es, en]) => cell(bi(es, en), bi(x.case.es[k], x.case.en[k]))).join('');
+      else grid = cell(bi('Qué es', 'What it is'), get('.pc-d')) + (get('.pc-det p') ? cell(bi('Decisión clave', 'Key decision'), get('.pc-det p')) : '');
+      const flow = x.flow ? `<ol class="pd-flow">${x.flow.es.map((f, j) => `<li>${bi(f, x.flow.en[j])}</li>`).join('')}</ol>` : '';
+      body.innerHTML = `<h3 id="prjdlg-t">${get('h3')}</h3><p class="pd-r">${get('.pc-r')}</p>${flow}
+        <div class="pd-grid">${grid}${cell(bi('Tecnología', 'Technology'), esc(card.querySelector('.pc-t').textContent))}</div>
+        <button type="button" class="pd-back" data-close><span aria-hidden="true">←</span> ${bi('Volver a los proyectos', 'Back to projects')}</button>`;
+      body.querySelector('[data-close]').addEventListener('click', () => prjDlg.close());
+      const vis = shown(), many = vis.length > 1;
+      document.getElementById('prjdlg-prev').hidden = document.getElementById('prjdlg-next').hidden = !many;
+      if (!prjDlg.open) { prjDlg.showModal(); prjDlg.focus(); }   // el foco va al diálogo, no a la primera flecha
+      prjDlg.scrollTop = 0;
+    }
+    const step = d => { const vis = shown(), i = vis.indexOf(cards[cur]); if (vis.length > 1) open(vis[(i + d + vis.length) % vis.length]); };
+    cards.forEach(card => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'pc-open mono';
+      b.innerHTML = `${bi('Ver ficha', 'View case')} <span aria-hidden="true">→</span>`;
+      card.append(b);
+      ['pointerenter', 'focusin', 'touchstart'].forEach(ev => card.addEventListener(ev, load, { once: true, passive: true }));
+      card.addEventListener('click', e => {
+        if (e.target.closest('.pc-det, a') || String(getSelection()).length) return;
+        open(card);
+      });
+    });
+    document.getElementById('prjdlg-prev').addEventListener('click', () => step(-1));
+    document.getElementById('prjdlg-next').addEventListener('click', () => step(1));
+    document.getElementById('prjdlg-x').addEventListener('click', () => prjDlg.close());
+    prjDlg.addEventListener('click', e => { if (e.target === prjDlg) prjDlg.close(); });
+    prjDlg.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') step(-1); else if (e.key === 'ArrowRight') step(1); });
   }
 
   /* ---------- Especialidades en 3D ----------

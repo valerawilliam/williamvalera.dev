@@ -129,8 +129,8 @@ window.BB_DATA = {
      "en": "Image-to-description validation with multimodal embeddings (CLIP), caching and human-reviewed thresholds"
     },
     {
-     "es": "Transcripción y resumen de voz, y extracción estructurada desde fotos y tarjetas",
-     "en": "Voice transcription and summarisation, and structured extraction from photos and business cards"
+     "es": "Transcripción y resumen de voz y de reuniones, también con modelos en local, y extracción estructurada desde fotos y tarjetas",
+     "en": "Transcription and summarisation of voice notes and meetings, also with local models, and structured extraction from photos and business cards"
     },
     {
      "es": "Búsqueda visual de productos y edición de imágenes con máscaras y recorte de fondo",
@@ -145,7 +145,7 @@ window.BB_DATA = {
      "en": "Batch processing, retries, token tracking and spend caps"
     }
    ],
-   "tech": "OpenAI · Anthropic · DeepL · Whisper · CLIP · PyTorch"
+   "tech": "OpenAI · Anthropic · DeepL · Whisper · Ollama · CLIP · PyTorch"
   },
   {
    "n": "04",
@@ -355,6 +355,10 @@ window.BB_DATA = {
      "en": "Dual backups: physical on a second local server, and full, versioned cloud copies with rclone (Wasabi and S3)"
     },
     {
+     "es": "Servidores Linux en clúster Hyper-V con alta disponibilidad, acceso solo con clave SSH y cortafuegos",
+     "en": "Linux servers on a Hyper-V cluster with high availability, SSH key-only access and firewall"
+    },
+    {
      "es": "Inventario de virtualización VMware y monitorización de discos, máquinas y bases de datos",
      "en": "VMware virtualisation inventory and monitoring of disks, machines and databases"
     },
@@ -375,7 +379,7 @@ window.BB_DATA = {
      "en": "Change procedures with a prior backup, traceability and rollback"
     }
    ],
-   "tech": "Windows Server · Debian · Samba · rclone · Wasabi · AWS · Docker · VMware"
+   "tech": "Windows Server · Debian · Ubuntu · Samba · rclone · Wasabi · AWS · Docker · VMware · Hyper-V"
   },
   {
    "n": "09",
@@ -971,15 +975,26 @@ window.BB_DATA = {
     "en": "Server control centre"
    },
    "desc": {
-    "es": "Panel propio desde el que controlo todos los servidores: recolectores de estado de máquinas virtuales, discos, almacenamiento, bases de datos, procesos y consumo de IA, con alertas por correo y móvil.",
-    "en": "My own dashboard to oversee every server: status collectors for virtual machines, disks, storage, databases, processes and AI usage, with email and mobile alerts."
+    "es": "Panel propio desde el que controlo todos los servidores: recolectores de solo lectura para máquinas virtuales, servidores locales y en la nube, webs y certificados, almacenamiento, bases de datos y tareas programadas, con histórico, gráficas y alertas por correo y móvil.",
+    "en": "My own dashboard to oversee every server: read-only collectors for virtual machines, on-premise and cloud servers, websites and certificates, storage, databases and scheduled tasks, with history, charts and email and mobile alerts."
    },
    "result": {
-    "es": "Las incidencias se detectan antes de que lleguen al usuario",
-    "en": "Incidents are detected before they reach users"
+    "es": "Las incidencias se detectan antes de que lleguen al usuario · estado completo recogido en menos de un minuto, antes unos 20",
+    "en": "Incidents are detected before they reach users · full status collected in under a minute, down from about 20"
    },
-   "details": [],
-   "tech": "Python · VMware · pyVmomi · Linux"
+   "details": [
+    {
+     "k": {
+      "es": "Decisión clave",
+      "en": "Key decision"
+     },
+     "v": {
+      "es": "Recolectores de solo lectura con usuarios sin privilegios, y aviso cuando un dato está caducado para que el panel nunca muestre en verde algo que no se ha comprobado. Acceso con segundo factor exigido por la API y registro de accesos.",
+      "en": "Read-only collectors running with unprivileged users, and a warning when data is stale so the dashboard never shows green for something that has not been checked. Access with a second factor enforced by the API, and an access log."
+     }
+    }
+   ],
+   "tech": "Python · FastAPI · React · VMware · pyVmomi · Linux"
   },
   {
    "tag": {
@@ -1000,6 +1015,68 @@ window.BB_DATA = {
    },
    "details": [],
    "tech": "Next.js · SQL Server"
+  },
+  {
+   "tag": {
+    "es": "IA aplicada",
+    "en": "Applied AI"
+   },
+   "title": {
+    "es": "Notas de voz y reuniones con IA en local",
+    "en": "Voice notes and meetings with local AI"
+   },
+   "desc": {
+    "es": "Transcribe notas de voz y reuniones sin que el audio salga del equipo, separa a los hablantes y convierte cada petición en un encargo estructurado: objetivo, cambios, criterios de aceptación y dudas abiertas.",
+    "en": "Transcribes voice notes and meetings without the audio leaving the machine, separates the speakers and turns each request into a structured brief: goal, changes, acceptance criteria and open questions."
+   },
+   "result": {
+    "es": "En uso en reuniones de desarrollo y en la toma de requisitos con usuarios · encargo generado en 8-11 s por nota, verificación incluida",
+    "en": "In use in development meetings and in requirements gathering with users · brief generated in 8-11 s per note, verification included"
+   },
+   "details": [
+    {
+     "k": {
+      "es": "Decisión clave",
+      "en": "Key decision"
+     },
+     "v": {
+      "es": "Nada que no se haya dicho: una segunda pasada del modelo comprueba cada afirmación contra la transcripción y lo que no la supera pasa a dudas abiertas. Los modelos se ejecutan en local; solo se conserva el texto.",
+      "en": "Nothing that was not said: a second model pass checks every statement against the transcript, and anything that fails moves to open questions. The models run locally; only the text is kept."
+     }
+    }
+   ],
+   "tech": "Whisper · Ollama · pyannote · FastAPI · Next.js"
+  },
+  {
+   "tag": {
+    "es": "Web",
+    "en": "Web"
+   },
+   "title": {
+    "es": "Migración de la web corporativa",
+    "en": "Corporate website migration"
+   },
+   "desc": {
+    "es": "Sustitución de la web corporativa en WordPress por una web estática en 5 idiomas, con las mismas URL, formularios propios validados en servidor y gestión de cookies propia.",
+    "en": "Replacement of the corporate WordPress site with a static website in 5 languages, keeping the same URLs, with in-house server-validated forms and in-house cookie management."
+   },
+   "result": {
+    "es": "A+ en Mozilla Observatory · sin plugins ni gestor de contenidos · corte sin interrupción del servicio",
+    "en": "A+ on Mozilla Observatory · no plugins or CMS · cutover with no service interruption"
+   },
+   "details": [
+    {
+     "k": {
+      "es": "Decisión clave",
+      "en": "Key decision"
+     },
+     "v": {
+      "es": "Raíz nueva en el mismo servidor: la web anterior quedó intacta y la vuelta atrás era un cambio de configuración de menos de dos minutos. Antes del corte, ensayo completo en el servidor de producción.",
+      "en": "A new root on the same server: the previous site stayed intact and rollback was a configuration change of under two minutes. Before the cutover, a full rehearsal on the production server."
+     }
+    }
+   ],
+   "tech": "Hugo · PHP · Apache · Playwright · Python"
   }
  ],
  "current": {

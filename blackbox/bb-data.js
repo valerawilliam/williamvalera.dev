@@ -565,8 +565,8 @@ window.BB_DATA = {
     "en": "AI agent team"
    },
    "desc": {
-    "es": "Nueve agentes por función, del desarrollo al diseño gráfico, sin acceso a credenciales y con aprobación humana en cada paso.",
-    "en": "Nine agents, one per function, from development to graphic design, with no credential access and human approval at every step."
+    "es": "Nueve agentes por función, del desarrollo al diseño gráfico, con permisos limitados y aprobación humana en cada paso.",
+    "en": "Nine agents, one per function, from development to graphic design, with restricted permissions and human approval at every step."
    },
    "result": {
     "es": "Hasta 8 proyectos activos en paralelo con un único responsable técnico",

@@ -379,7 +379,7 @@ window.BB = {
      "solution": "Cada agente entrega un parte con semáforo y recomienda el siguiente paso; nada avanza sin aprobación humana.",
      "resp": "Diseño del equipo, sus reglas y sus controles, y aprobación de cada paso que llega a producción.",
      "results": "Hasta 8 proyectos activos en paralelo, con trazabilidad completa en git y un plan propio de mejora continua.",
-     "decisions": "Sin acceso a credenciales, sin autoaprobación, ERP en solo lectura y separación de funciones."
+     "decisions": "Permisos limitados, sin autoaprobación, ERP en solo lectura y separación de funciones."
     },
     "en": {
      "context": "More than 15 systems to evolve, maintain and document, with a single technical lead.",
@@ -388,7 +388,7 @@ window.BB = {
      "solution": "Each agent delivers a traffic-light report and recommends the next step; nothing moves without human approval.",
      "resp": "Designing the team, its rules and controls, and approving every step that reaches production.",
      "results": "Up to 8 active projects in parallel, with full traceability in git and its own continuous-improvement plan.",
-     "decisions": "No credential access, no self-approval, read-only ERP and separation of duties."
+     "decisions": "Restricted permissions, no self-approval, read-only ERP and separation of duties."
     }
    }
   },

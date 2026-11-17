@@ -2177,3 +2177,9 @@
     .pd-k, .pd-grid h4 { font-size: max(12px, .75rem); }
   }
   @media (prefers-reduced-motion: reduce) { .prjdlg[open] { animation: none; } .pc:hover .pc-open > span[aria-hidden] { transform: none; } }
+
+  /* ===== Experiencia: el bloque «Gestión y servicio» ocupa todo el ancho, con la lista en dos columnas ===== */
+  .job-areas > .ja-wide { grid-column: 1 / -1; }
+  .job-areas > .ja-wide ul { columns: 2; column-gap: 40px; }
+  .job-areas > .ja-wide li { break-inside: avoid; }
+  @media (max-width: 900px) { .job-areas > .ja-wide ul { columns: 1; } }

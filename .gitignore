@@ -40,6 +40,9 @@
 !tools/deploy.sh
 !tools/deploy-files.txt
 !tools/build_cv.mjs
+!tools/cv/
+!tools/cv/cv-es.html
+!tools/cv/cv-en.html
 !tools/sync_system_os.py
 
 # Privado, nunca se sube aunque esté dentro de tools/

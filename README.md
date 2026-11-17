@@ -19,7 +19,7 @@ Código de mi web profesional: [williamvalera.dev](https://williamvalera.dev). W
 
 1. Editar `index.html` (ES y EN a la vez).
 2. Si cambian capacidades, proyectos o experiencia: `python3 tools/sync_system_os.py` regenera la versión 3D.
-3. Si afecta al CV: `node tools/build_cv.mjs` (necesita `puppeteer-core` y Chrome). Debe seguir siendo de dos páginas.
+3. Si afecta al CV: editar `tools/cv/cv-es.html` y `tools/cv/cv-en.html` y lanzar `node tools/build_cv.mjs` (necesita `puppeteer-core` y Chrome). Debe seguir siendo de dos páginas.
 4. Probar en local: `python3 -m http.server 8080 --bind 127.0.0.1` y abrir `http://127.0.0.1:8080/index.html?nointro` (`&lang=en` para inglés). Revisar a 1440, 1280, 1024, 390 y 320 px.
 5. Publicar: `bash tools/deploy.sh --dry` muestra qué subiría; `bash tools/deploy.sh` renueva el `?v=` de los assets (la CDN cachea CSS y JS), sube **solo** lo listado en `tools/deploy-files.txt` y comprueba la web en vivo. La conexión se lee de `tools/deploy.env`, que no se versiona.
 

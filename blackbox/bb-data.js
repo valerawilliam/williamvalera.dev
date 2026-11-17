@@ -339,8 +339,8 @@ window.BB_DATA = {
    },
    "items": [
     {
-     "es": "Windows Server y Linux, on-premise y cloud",
-     "en": "Windows Server and Linux, on-premise and cloud"
+     "es": "Windows Server y Linux, on-premise y cloud; servidores en la nube creados y administrados desde cero",
+     "en": "Windows Server and Linux, on-premise and cloud; cloud servers built and administered from scratch"
     },
     {
      "es": "Servidor de ficheros Debian con Samba para los equipos Windows, con permisos por grupos y niveles por departamento",
@@ -361,6 +361,10 @@ window.BB_DATA = {
     {
      "es": "Inventario de virtualización VMware y monitorización de discos, máquinas y bases de datos",
      "en": "VMware virtualisation inventory and monitoring of disks, machines and databases"
+    },
+    {
+     "es": "Gestión centralizada de puestos y servidores (RMM): parches automáticos, soporte remoto e inventario",
+     "en": "Centralised management of workstations and servers (RMM): automatic patching, remote support and inventory"
     },
     {
      "es": "Alertas por correo y móvil, logs con retención y control de ejecuciones simultáneas",
@@ -435,8 +439,8 @@ window.BB_DATA = {
     "en": "Sales tool for the field team, integrated with the ERP and working offline."
    },
    "result": {
-    "es": "28+ pedidos en los primeros días de piloto · sincronización en ~1 min · sin coste de licencias",
-    "en": "28+ orders in the first days of the pilot · ~1 min sync · no licence costs"
+    "es": "Más de 130 pedidos en piloto con parte de la red comercial · sincronización en ~1 min · sin coste de licencias",
+    "en": "130+ orders in pilot with part of the sales force · ~1 min sync · no licence costs"
    },
    "details": [
     {
@@ -886,8 +890,8 @@ window.BB_DATA = {
     "en": "Request and incident management with states, teams, priorities, attachments, notifications and time logging."
    },
    "result": {
-    "es": "Soporte trazable con SLA calculados y métricas de servicio",
-    "en": "Traceable support with calculated SLAs and service metrics"
+    "es": "612 solicitudes de usuarios atendidas en 8 meses · 97 % resueltas · 80 % en menos de 24 horas",
+    "en": "612 user requests handled in 8 months · 97% resolved · 80% in under 24 hours"
    },
    "details": [
     {
@@ -1081,14 +1085,46 @@ window.BB_DATA = {
  ],
  "current": {
   "title": {
-   "es": "Responsable de Sistemas de Negocio, Automatización e IA",
-   "en": "Business Systems, Automation & AI Lead"
+   "es": "Responsable de IT",
+   "en": "IT Manager"
   },
   "summary": {
-   "es": "Responsabilidad integral sobre ERP, datos, aplicaciones, infraestructura, copias de seguridad y seguridad de la información.",
-   "en": "End-to-end accountability for ERP, data, applications, infrastructure, backups and information security."
+   "es": "Dirección de toda la tecnología de la empresa, con reporte directo a gerencia: 120 usuarios (oficina, almacén y red comercial), 4 sedes en España, Portugal e Italia y 4 proveedores de IT.",
+   "en": "I run all of the company’s technology, reporting directly to senior management: 120 users (office, warehouse and sales force), 4 sites in Spain, Portugal and Italy, and 4 IT vendors."
   },
   "areas": [
+   {
+    "h": {
+     "es": "Gestión y servicio",
+     "en": "Management & service"
+    },
+    "items": [
+     {
+      "es": "Interlocutor único con cuatro proveedores: partner del ERP, fabricante de hardware, proveedor de impresión y de copias de seguridad, y telefonía",
+      "en": "Single point of contact for four vendors: ERP partner, hardware manufacturer, printing and backup provider, and telephony"
+     },
+     {
+      "es": "Estudio comparativo entre nube e infraestructura propia, con propuestas de varios partners, y renovación de servidores y almacenamiento aprobada por gerencia (2026)",
+      "en": "Cloud versus on-premise study, with proposals from several partners, and a server and storage renewal approved by management (2026)"
+     },
+     {
+      "es": "ServiceDesk propio en sustitución de la herramienta de pago: 612 solicitudes de usuarios atendidas en 8 meses, 97 % resueltas y 80 % en menos de 24 horas",
+      "en": "In-house ServiceDesk replacing the paid tool: 612 user requests handled in 8 months, 97% resolved and 80% in under 24 hours"
+     },
+     {
+      "es": "Gestión remota de puestos y servidores (RMM) implantada desde cero: parches automáticos, soporte remoto e inventario",
+      "en": "Remote management of workstations and servers (RMM) implemented from scratch: automatic patching, remote support and inventory"
+     },
+     {
+      "es": "Prioridades acordadas con la dirección de proyectos y 5 coordinadores de departamento",
+      "en": "Priorities agreed with project management and 5 department coordinators"
+     },
+     {
+      "es": "Protección de datos (RGPD), plan de recuperación ante desastres y sistemas documentados para garantizar la continuidad",
+      "en": "Data protection (GDPR), disaster recovery plan and documented systems to guarantee continuity"
+     }
+    ]
+   },
    {
     "h": {
      "es": "ERP",
@@ -1218,15 +1254,39 @@ window.BB_DATA = {
     "en": "2024 — hoy"
    },
    "title": {
-    "es": "Responsable de Sistemas de Negocio, Automatización e IA",
-    "en": "Business Systems, Automation & AI Lead"
+    "es": "Responsable de IT",
+    "en": "IT Manager"
    },
    "org": "Arte Regal Import, S.L.",
    "summary": {
-    "es": "Responsabilidad integral sobre ERP, datos, aplicaciones, infraestructura, copias de seguridad y seguridad de la información.",
-    "en": "End-to-end accountability for ERP, data, applications, infrastructure, backups and information security."
+    "es": "Dirección de toda la tecnología de la empresa, con reporte directo a gerencia: 120 usuarios (oficina, almacén y red comercial), 4 sedes en España, Portugal e Italia y 4 proveedores de IT.",
+    "en": "I run all of the company’s technology, reporting directly to senior management: 120 users (office, warehouse and sales force), 4 sites in Spain, Portugal and Italy, and 4 IT vendors."
    },
    "items": [
+    {
+     "es": "Interlocutor único con cuatro proveedores: partner del ERP, fabricante de hardware, proveedor de impresión y de copias de seguridad, y telefonía",
+     "en": "Single point of contact for four vendors: ERP partner, hardware manufacturer, printing and backup provider, and telephony"
+    },
+    {
+     "es": "Estudio comparativo entre nube e infraestructura propia, con propuestas de varios partners, y renovación de servidores y almacenamiento aprobada por gerencia (2026)",
+     "en": "Cloud versus on-premise study, with proposals from several partners, and a server and storage renewal approved by management (2026)"
+    },
+    {
+     "es": "ServiceDesk propio en sustitución de la herramienta de pago: 612 solicitudes de usuarios atendidas en 8 meses, 97 % resueltas y 80 % en menos de 24 horas",
+     "en": "In-house ServiceDesk replacing the paid tool: 612 user requests handled in 8 months, 97% resolved and 80% in under 24 hours"
+    },
+    {
+     "es": "Gestión remota de puestos y servidores (RMM) implantada desde cero: parches automáticos, soporte remoto e inventario",
+     "en": "Remote management of workstations and servers (RMM) implemented from scratch: automatic patching, remote support and inventory"
+    },
+    {
+     "es": "Prioridades acordadas con la dirección de proyectos y 5 coordinadores de departamento",
+     "en": "Priorities agreed with project management and 5 department coordinators"
+    },
+    {
+     "es": "Protección de datos (RGPD), plan de recuperación ante desastres y sistemas documentados para garantizar la continuidad",
+     "en": "Data protection (GDPR), disaster recovery plan and documented systems to guarantee continuity"
+    },
     {
      "es": "Desarrollo C/AL con trazabilidad en código y documentación",
      "en": "C/AL development traced in code and documentation"

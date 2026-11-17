@@ -4,9 +4,9 @@
   /* ---------- Textos dinámicos ---------- */
   const T = {
     es: {
-      title: 'William Valera · Head of IT & Business Systems',
-      desc: 'Head of IT & Business Systems con más de 20 años en sistemas. ERP Microsoft Dynamics NAV, ingeniería de datos, IA aplicada con agentes y supervisión humana, normativa UE (EUDR, CBAM, PPWR), seguridad e infraestructura. Valencia, España.',
-      rot: ['ERP Dynamics NAV / BC', 'Datos e integración', 'Infraestructura híbrida', 'IA aplicada', 'Seguridad y gobierno'],
+      title: 'William Valera · Responsable de IT · IT Manager',
+      desc: 'Responsable de IT (IT Manager) con más de 20 años en sistemas. ERP Microsoft Dynamics NAV, ingeniería de datos, IA aplicada con agentes y supervisión humana, normativa UE (EUDR, CBAM, PPWR), seguridad e infraestructura. Valencia, España.',
+      rot: ['ERP Dynamics NAV', 'Datos e integración', 'Infraestructura híbrida', 'IA aplicada', 'Seguridad y gobierno'],
       all: 'Todos', cats: { erp: 'ERP', datos: 'Datos', apps: 'Aplicaciones', ia: 'IA', infra: 'Infraestructura' },
       result: 'Resultado',
       approvalPending: 'Despliegue a producción pendiente de aprobación', approve: 'Aprobar',
@@ -20,9 +20,9 @@
       log: [['ok', 'qa', 'tests superados · 0 secretos detectados'], ['', 'datos', 'carga validada · recuentos dentro de umbral'], ['acc', 'arquitectura', 'propuesta lista para revisión'], ['ok', 'ops', 'servicios en verde · latencia normal'], ['warn', 'infra', 'cambio preparado · requiere aprobación'], ['', 'docs', 'documentación actualizada'], ['ok', 'erp', 'objeto modificado · trazado en repositorio'], ['', 'desarrollo', 'rama lista para QA']]
     },
     en: {
-      title: 'William Valera · Head of IT & Business Systems',
-      desc: 'Head of IT & Business Systems with 20+ years in IT systems. Microsoft Dynamics NAV ERP, data engineering, applied AI with agents under human oversight, EU regulation (EUDR, CBAM, PPWR), security and infrastructure. Valencia, Spain.',
-      rot: ['ERP Dynamics NAV / BC', 'Data & integration', 'Hybrid infrastructure', 'Applied AI', 'Security & governance'],
+      title: 'William Valera · IT Manager · Business Systems and Applied AI',
+      desc: 'IT Manager with 20+ years in IT systems. Microsoft Dynamics NAV ERP, data engineering, applied AI with agents under human oversight, EU regulation (EUDR, CBAM, PPWR), security and infrastructure. Valencia, Spain.',
+      rot: ['ERP Dynamics NAV', 'Data & integration', 'Hybrid infrastructure', 'Applied AI', 'Security & governance'],
       all: 'All', cats: { erp: 'ERP', datos: 'Data', apps: 'Applications', ia: 'AI', infra: 'Infrastructure' },
       result: 'Outcome',
       approvalPending: 'Production deployment awaiting approval', approve: 'Approve',
@@ -76,7 +76,7 @@
     // Tecnologías sin logo propio: se muestran con el de su plataforma
     'C/AL': SI9 + 'dynamics365.svg', 'NAS / Job Queue': SI9 + 'dynamics365.svg', 'RDLC': SI9 + 'dynamics365.svg',
     'T-SQL': DEV + 'microsoftsqlserver/microsoftsqlserver-original.svg', 'Hyper-V': DEV + 'windows11/windows11-original.svg', 'Whisper': SI9 + 'openai.svg', 'CLIP': SI9 + 'openai.svg',
-    'Flask': DEV + 'flask/flask-original.svg', 'Code review': SI + 'github', 'rclone': SI + 'rclone', 'Samba': 'img/logos/c-samba.svg', 'Firewall UTM': 'img/logos/c-firewall.svg', 'VLAN': 'img/logos/c-vlan.svg', 'VPN': 'img/logos/c-vpn.svg',
+    'Flask': DEV + 'flask/flask-original.svg', 'Code review': SI + 'github', 'rclone': SI + 'rclone', 'Samba': 'img/logos/c-samba.svg', 'Firewall UTM': 'img/logos/c-firewall.svg', 'VLAN': 'img/logos/c-vlan.svg', 'VPN': 'img/logos/c-vpn.svg', 'RMM': 'img/logos/c-rmm.svg',
     'SOAP': 'img/logos/c-soap.svg', 'API REST': 'img/logos/c-rest.svg', 'Hugo': SI + 'hugo', 'PyQt5': SI + 'qt', 'Ollama': SI + 'ollama', 'Claude Code': SI + 'claude', 'Apache': SI + 'apache', 'EUDR · CBAM · PPWR': 'img/logos/c-eu.svg', 'CLP / GHS': 'img/logos/c-ghs.svg', 'EDI': 'img/logos/c-edi.svg', 'ETL': 'img/logos/c-etl.svg', 'LLM Agents': 'img/logos/c-agents.svg',
     'HITL': 'img/logos/c-hitl.svg', 'gitleaks': 'img/logos/c-gitleaks.svg', 'TOTP / 2FA': 'img/logos/c-totp.svg', 'Antivirus / EDR': 'img/logos/c-edr.svg', 'Backups': 'img/logos/c-backups.svg',
     'Git': DEV + 'git/git-original.svg', 'GitHub': SI + 'github', 'GitHub Actions': DEV + 'githubactions/githubactions-original.svg'
@@ -86,7 +86,7 @@
     ['SQL Server', 'T-SQL', 'MySQL', 'MariaDB', 'SQLite', 'SQLAlchemy', 'pandas', 'ETL'],
     ['Python', 'FastAPI', 'Flask', 'TypeScript', 'React', 'Next.js', 'Vite', 'Tailwind', 'PWA', 'three.js', 'API REST', 'PyQt5', 'PHP', 'PrestaShop', 'Hugo', 'PowerShell', 'Bash'],
     ['Claude', 'Claude Code', 'Anthropic', 'OpenAI', 'DeepL', 'Whisper', 'Ollama', 'PyTorch', 'CLIP', 'LLM Agents', 'HITL'],
-    ['AWS', 'Cloudflare', 'Docker', 'nginx', 'Apache', 'Caddy', 'VMware', 'Hyper-V', 'Firewall UTM', 'VLAN', 'VPN', 'Debian', 'Ubuntu', 'Linux', 'Samba', 'Windows Server', 'rclone', 'Wasabi', "Let's Encrypt"],
+    ['AWS', 'Cloudflare', 'Docker', 'nginx', 'Apache', 'Caddy', 'VMware', 'Hyper-V', 'Firewall UTM', 'VLAN', 'VPN', 'RMM', 'Debian', 'Ubuntu', 'Linux', 'Samba', 'Windows Server', 'rclone', 'Wasabi', "Let's Encrypt"],
     ['Git', 'GitHub', 'GitHub Actions', 'pytest', 'Playwright', 'Code review', 'gitleaks', 'TOTP / 2FA', 'Antivirus / EDR', 'Backups']
   ];
   const logo = name => {

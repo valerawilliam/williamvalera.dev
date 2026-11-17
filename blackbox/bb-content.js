@@ -230,7 +230,7 @@ window.BB = {
      "arch": "Interfaz instalable (PWA) → API con controles en cada petición → base de la aplicación alimentada por la capa de datos del ERP.",
      "solution": "Plataforma propia con catálogo, carrito, área de cliente y pedidos que vuelven al ERP sin intervención manual.",
      "resp": "De extremo a extremo: requisitos con los comerciales, arquitectura, desarrollo dirigido con IA, seguridad, despliegue y operación.",
-     "results": "En producción desde octubre de 2026 en fase piloto: más de 28 pedidos en los primeros días, sincronización completa de un dispositivo en torno a un minuto y sin coste de licencias. Los comerciales la valoran como la más rápida de las herramientas que han usado.",
+     "results": "En producción desde octubre de 2026 en fase piloto con parte de la red comercial: más de 130 pedidos, sincronización completa de un dispositivo en torno a un minuto y sin coste de licencias. Los comerciales la valoran como la más rápida de las herramientas que han usado.",
      "decisions": "Construir en lugar de licenciar; datos desde una capa validada y no desde el ERP en directo; segundo factor y permisos por cliente."
     },
     "en": {
@@ -239,7 +239,7 @@ window.BB = {
      "arch": "Installable interface (PWA) → API with controls on every request → app database fed by the ERP data layer.",
      "solution": "An in-house platform with catalogue, cart, customer area and orders that flow back to the ERP with no manual step.",
      "resp": "End to end: requirements with the sales team, architecture, AI-driven development, security, deployment and operations.",
-     "results": "In production since October 2026 as a pilot: 28+ orders in the first days, a full device sync in about a minute and no licence costs. Sales reps rate it the fastest tool they have used.",
+     "results": "In production since October 2026 as a pilot with part of the sales force: 130+ orders, a full device sync in about a minute and no licence costs. Sales reps rate it the fastest tool they have used.",
      "decisions": "Build instead of license; data from a validated layer rather than the live ERP; second factor and per-customer permissions."
     }
    }
